@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:gravity="center" android:layout_gravity="center" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:layout_gravity="center" android:id="@+id/imagenotileft" android:layout_width="@dimen/value_60" android:layout_height="@dimen/value_60" android:layout_marginLeft="@dimen/value_3" android:layout_marginTop="@dimen/value_3" android:layout_marginRight="@dimen/value_10" android:layout_marginBottom="@dimen/value_3" android:src="@mipmap/ic_launcher" android:scaleType="fitXY"/>
+        <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="-2dp" android:layout_weight="1" android:layout_toRightOf="@+id/imagenotileft">
+            <TextView android:textSize="17sp" android:textStyle="bold" android:textColor="@color/black" android:ellipsize="marquee" android:gravity="bottom" android:layout_gravity="center" android:id="@+id/title" android:paddingBottom="@dimen/value_4" android:focusable="true" android:focusableInTouchMode="true" android:fadingEdge="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="hello" android:scrollHorizontally="false" android:singleLine="true" android:marqueeRepeatLimit="marquee_forever" android:textIsSelectable="true">
+                <requestFocus/>
+            </TextView>
+            <TextView android:textSize="14sp" android:textColor="@color/grey1" android:layout_gravity="center" android:id="@+id/text" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/value_2" android:text="hello" android:singleLine="true"/>
+        </LinearLayout>
+        <ImageView android:id="@+id/imagenotiright" android:padding="@dimen/value_10" android:paddingLeft="@dimen/value_10" android:paddingTop="@dimen/value_10" android:paddingRight="@dimen/value_4" android:paddingBottom="@dimen/value_10" android:layout_width="@dimen/value_55" android:layout_height="@dimen/value_55" android:layout_marginTop="@dimen/value_5" android:src="@mipmap/download" android:tint="@color/green_notification" android:layout_alignParentRight="true"/>
+    </LinearLayout>
+</RelativeLayout>

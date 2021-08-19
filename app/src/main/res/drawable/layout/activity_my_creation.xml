@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:orientation="horizontal" android:id="@+id/toolbar" android:background="@color/colorPrimary" android:padding="@dimen/value_2" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@+id/back" android:background="?attr/selectableItemBackground" android:padding="5dp" android:layout_width="35dp" android:layout_height="35dp" android:layout_marginLeft="@dimen/value_8" android:src="@drawable/ic_back" android:tint="@color/white"/>
+        <TextView android:textSize="20dp" android:textColor="@color/white" android:gravity="center" android:layout_gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="My Creation" android:layout_centerInParent="true"/>
+    </RelativeLayout>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1" android:layout_below="@+id/toolbar">
+        <ImageView android:layout_gravity="center" android:id="@+id/novideoimg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/no_image"/>
+        <GridView android:gravity="center" android:layout_gravity="center" android:id="@+id/lstList" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_margin="@dimen/value_5" android:numColumns="2" android:layout_weight="1"/>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:gravity="center" android:layout_gravity="center" android:background="@color/black_trans2" android:layout_width="match_parent" android:layout_height="match_parent">
+    <android.support.p003v7.widget.CardView android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/value_10" app:cardBackgroundColor="@color/white" app:cardCornerRadius="@dimen/value_5" app:cardElevation="5dp" app:cardUseCompatPadding="true">
+        <LinearLayout android:orientation="vertical" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="20sp" android:textColor="#000000" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8dp" android:layout_marginTop="8dp" android:layout_marginBottom="@dimen/value_10" android:text="@string/delete_confirm"/>
+            <LinearLayout android:layout_gravity="right" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="match_parent">
+                <TextView android:textSize="15sp" android:textColor="@color/green700" android:gravity="center" android:id="@+id/delete_no" android:padding="@dimen/value_5" android:layout_width="80dp" android:layout_height="wrap_content" android:layout_marginLeft="8dp" android:layout_marginTop="8dp" android:text="@string/delete_no"/>
+                <TextView android:textSize="15sp" android:textColor="@color/green700" android:gravity="center" android:id="@+id/delete_yes" android:padding="@dimen/value_5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8dp" android:layout_marginTop="8dp" android:text="@string/delete_yes"/>
+            </LinearLayout>
+        </LinearLayout>
+    </android.support.p003v7.widget.CardView>
+</LinearLayout>

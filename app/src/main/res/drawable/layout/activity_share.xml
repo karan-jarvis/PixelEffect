@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="horizontal" android:background="@color/colorPrimary" android:padding="@dimen/value_2" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:layout_gravity="center" android:id="@+id/ic_back" android:background="?attr/selectableItemBackground" android:padding="@dimen/value_5" android:layout_width="35dp" android:layout_height="35dp" android:layout_marginLeft="8dp" android:src="@drawable/ic_back"/>
+        <TextView android:textSize="18dp" android:textColor="@color/white" android:gravity="center" android:layout_gravity="center" android:id="@+id/textView2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Share" android:layout_weight="1"/>
+        <ImageView android:layout_gravity="center" android:id="@+id/home" android:background="?attr/selectableItemBackground" android:padding="12dp" android:layout_width="45dp" android:layout_height="45dp" android:layout_marginRight="8dp" android:src="@drawable/ic_home"/>
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:layout_gravity="center" android:id="@+id/c_1" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+        <ImageView android:layout_gravity="center" android:id="@+id/finalimg" android:layout_width="0dp" android:layout_height="match_parent" android:layout_margin="15dp" android:src="@mipmap/ic_launcher" android:layout_weight="1"/>
+    </LinearLayout>
+    <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:id="@+id/native_ad_container" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:gravity="center" android:layout_gravity="center" android:id="@+id/ic_path" android:paddingLeft="20dp" android:paddingRight="20dp" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <LinearLayout android:gravity="bottom" android:orientation="vertical" android:id="@+id/ll_2" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="10dp">
+            <LinearLayout android:gravity="bottom" android:layout_gravity="center" android:orientation="vertical" android:id="@+id/llWhatsApp" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+                <ImageView android:layout_gravity="center" android:id="@+id/iv_whatsapp" android:layout_width="match_parent" android:layout_height="40dp" android:layout_marginTop="@dimen/value_2" android:layout_marginBottom="@dimen/value_5dp" android:src="@drawable/whatsappicon"/>
+                <TextView android:textSize="@dimen/text_10" android:textColor="@android:color/black" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="WhatsApp" android:singleLine="true"/>
+            </LinearLayout>
+            <LinearLayout android:layout_gravity="left" android:orientation="vertical" android:id="@+id/llMore" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+                <ImageView android:layout_gravity="center" android:id="@+id/iv_Share_More" android:layout_width="match_parent" android:layout_height="40dp" android:src="@drawable/more2" android:layout_weight="1"/>
+                <TextView android:textSize="@dimen/text_10" android:textColor="@android:color/black" android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:text="More" android:singleLine="true"/>
+            </LinearLayout>
+            <LinearLayout android:gravity="bottom" android:layout_gravity="center" android:orientation="vertical" android:id="@+id/llhike" android:visibility="gone" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+                <ImageView android:layout_gravity="center" android:id="@+id/iv_hike" android:layout_width="50dp" android:layout_height="50dp" android:src="@drawable/hike"/>
+                <TextView android:textSize="@dimen/text_10" android:textColor="@android:color/black" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Hike" android:singleLine="true"/>
+            </LinearLayout>
+            <LinearLayout android:gravity="bottom" android:layout_gravity="center" android:orientation="vertical" android:id="@+id/llFacebook" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+                <ImageView android:layout_gravity="bottom" android:id="@+id/iv_facebook" android:layout_width="match_parent" android:layout_height="40dp" android:layout_marginTop="@dimen/value_5" android:layout_marginBottom="@dimen/text_5" android:src="@drawable/facebook"/>
+                <TextView android:textSize="@dimen/text_10" android:textColor="@android:color/black" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Facebook" android:singleLine="true"/>
+            </LinearLayout>
+            <LinearLayout android:gravity="bottom" android:layout_gravity="center" android:orientation="vertical" android:id="@+id/llInstagram" android:visibility="gone" android:layout_width="0dp" android:layout_height="match_parent" android:layout_marginRight="20dp" android:layout_weight="1">
+                <ImageView android:layout_gravity="center" android:id="@+id/iv_instagram" android:layout_width="match_parent" android:layout_height="40dp" android:layout_marginBottom="@dimen/text_5" android:src="@drawable/insta"/>
+                <TextView android:textSize="@dimen/text_10" android:textColor="@android:color/black" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Instagram" android:singleLine="true"/>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@+id/ll_apps" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="15dp">
+            <LinearLayout android:gravity="bottom" android:layout_gravity="center" android:orientation="vertical" android:id="@+id/llTwitter" android:visibility="gone" android:layout_width="0dp" android:layout_height="match_parent" android:layout_marginRight="20dp" android:layout_weight="0.33">
+                <ImageView android:layout_gravity="bottom" android:id="@+id/iv_Twitter" android:layout_width="match_parent" android:layout_height="40dp" android:src="@drawable/twittericon"/>
+                <TextView android:textSize="@dimen/text_10" android:textColor="@android:color/black" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Twitter" android:singleLine="true"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:visibility="visible" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:layout_marginBottom="5dp" android:layout_weight="1">
+                <FrameLayout android:layout_gravity="center" android:layout_width="@dimen/value_70" android:layout_height="@dimen/value_70" android:layout_marginBottom="@dimen/text_5">
+                    <p028de.hdodenhof.circleimageview.CircleImageView android:id="@+id/app1" android:layout_width="@dimen/value_70" android:layout_height="@dimen/value_70" app:civ_border_width="1dp" app:civ_border_color="@color/gray_bg"/>
+                    <TextView android:textSize="9sp" android:textColor="@color/white" android:gravity="right" android:layout_gravity="right" android:background="@drawable/round_gray" android:padding="3dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="AD"/>
+                </FrameLayout>
+                <TextView android:textSize="@dimen/text_10" android:textColor="@android:color/black" android:ellipsize="marquee" android:layout_gravity="center" android:id="@+id/appname1" android:padding="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:maxLines="1" android:singleLine="true" android:marqueeRepeatLimit="marquee_forever"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:visibility="visible" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+                <FrameLayout android:layout_gravity="center" android:layout_width="@dimen/value_70" android:layout_height="@dimen/value_70" android:layout_marginBottom="@dimen/text_5">
+                    <p028de.hdodenhof.circleimageview.CircleImageView android:id="@+id/app2" android:layout_width="@dimen/value_70" android:layout_height="@dimen/value_70" app:civ_border_width="1dp" app:civ_border_color="@color/gray_bg"/>
+                    <TextView android:textSize="9sp" android:textColor="@color/white" android:gravity="right" android:layout_gravity="right" android:background="@drawable/round_gray" android:padding="3dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="AD"/>
+                </FrameLayout>
+                <TextView android:textSize="@dimen/text_10" android:textColor="@android:color/black" android:ellipsize="marquee" android:layout_gravity="center" android:id="@+id/appname2" android:padding="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:maxLines="1" android:singleLine="true" android:marqueeRepeatLimit="marquee_forever"/>
+            </LinearLayout> -\10
+            <LinearLayout android:orientation="vertical" android:visibility="visible" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+                <FrameLayout android:layout_gravity="center" android:layout_width="@dimen/value_70" android:layout_height="@dimen/value_70" android:layout_marginBottom="@dimen/text_5">
+                    <p028de.hdodenhof.circleimageview.CircleImageView android:id="@+id/app3" android:layout_width="@dimen/value_70" android:layout_height="@dimen/value_70" app:civ_border_width="1dp" app:civ_border_color="@color/gray_bg"/>
+                    <TextView android:textSize="9sp" android:textColor="@color/white" android:gravity="right" android:layout_gravity="right" android:background="@drawable/round_gray" android:padding="3dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="AD"/>
+                </FrameLayout>
+                <TextView android:textSize="@dimen/text_10" android:textColor="@android:color/black" android:ellipsize="marquee" android:layout_gravity="center" android:id="@+id/appname3" android:padding="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:maxLines="1" android:singleLine="true" android:marqueeRepeatLimit="marquee_forever"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

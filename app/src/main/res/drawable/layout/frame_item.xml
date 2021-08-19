@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <photovideozone.pixeleffect.view.SquareImageView android:layout_gravity="center" android:id="@+id/iv_main" android:padding="@dimen/value_3" android:layout_width="45dp" android:layout_height="45dp" android:layout_margin="@dimen/value_5" android:src="@mipmap/ic_launcher"/>
+    <ImageView android:layout_gravity="center" android:id="@+id/img_editing" android:padding="@dimen/value_3" android:layout_width="45dp" android:layout_height="45dp" android:layout_margin="@dimen/value_5" android:src="@drawable/pixel_2"/>
+</FrameLayout>

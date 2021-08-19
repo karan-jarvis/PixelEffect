@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:id="@+id/lin_add_text" android:background="#e0e0e0" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:id="@+id/layoutContent" android:layout_width="match_parent" android:layout_height="20dp" android:layout_weight="1">
+        <View android:background="#e8e8e8" android:layout_width="match_parent" android:layout_height="match_parent" android:alpha="0.4"/>
+        <LinearLayout android:gravity="center" android:layout_gravity="top" android:orientation="horizontal" android:id="@+id/layout_navbar" android:background="@color/colorPrimary" android:padding="2dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <ImageView android:id="@+id/lin_back" android:padding="5dp" android:layout_width="35dp" android:layout_height="35dp" android:layout_marginLeft="@dimen/value_8" android:src="@drawable/ic_back" android:tint="@color/white"/>
+            <LinearLayout android:gravity="center" android:layout_gravity="start" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1">
+                <TextView android:textSize="20dp" android:textColor="@color/white" android:gravity="center" android:layout_gravity="center" android:id="@+id/nav_text" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Add Text" android:layout_weight="1"/>
+            </LinearLayout>
+            <ImageView android:id="@+id/main_img_save" android:padding="@dimen/value_5" android:layout_width="32dp" android:layout_height="32dp" android:layout_marginRight="@dimen/value_8" android:src="@drawable/done" android:tint="@color/white"/>
+        </LinearLayout>
+        <RelativeLayout android:id="@+id/relAllDrawText" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/layout_navbar">
+            <TextView android:textSize="40sp" android:textColor="#ffffff" android:id="@+id/txt_main" android:padding="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="5"/>
+        </RelativeLayout>
+        <RelativeLayout android:id="@+id/relTextSize" android:background="@mipmap/text_seekbar_bg" android:padding="10dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_above="@+id/rel_buttons">
+            <RelativeLayout android:id="@+id/rel_size" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="20sp" android:textColor="#ffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:text="Size" android:layout_centerVertical="true"/>
+                <TextView android:textSize="20sp" android:textColor="#ffffff" android:id="@+id/btn_text_done" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="8dp" android:text="Done" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+            </RelativeLayout>
+            <View android:id="@+id/adText" android:layout_width="match_parent" android:layout_height="10dp" android:layout_below="@+id/rel_size"/>
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="14dp" android:layout_below="@+id/adText" android:layout_centerVertical="true">
+                <SeekBar android:id="@+id/sekTextSize" android:paddingLeft="25dp" android:paddingRight="25dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxHeight="3dp" android:max="30" android:layout_centerInParent="true" android:progressTint="@color/white" android:thumbTint="@color/white"/>
+            </RelativeLayout>
+        </RelativeLayout>
+        <RelativeLayout android:id="@+id/relTextColor" android:background="@mipmap/text_seekbar_bg" android:padding="10dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_above="@+id/rel_buttons">
+            <RelativeLayout android:id="@+id/rel_color" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="20sp" android:textColor="#ffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:text="Color" android:layout_centerVertical="true"/>
+                <TextView android:textSize="20sp" android:textColor="#ffffff" android:id="@+id/btn_color_done" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="8dp" android:text="Done" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+            </RelativeLayout>
+            <View android:id="@+id/adColor" android:layout_width="match_parent" android:layout_height="30dp" android:layout_below="@+id/rel_color"/>
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="2dp" android:layout_below="@+id/adColor">
+                <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <GridView android:gravity="center" android:layout_gravity="center" android:id="@+id/grid_color" android:layout_width="match_parent" android:layout_height="125dp" android:listSelector="@drawable/list_select" android:verticalSpacing="-4dp" android:numColumns="7"/>
+                </LinearLayout>
+            </RelativeLayout>
+        </RelativeLayout>
+        <RelativeLayout android:id="@+id/relconAlign" android:background="@mipmap/text_seekbar_bg" android:padding="10dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_above="@+id/rel_buttons">
+            <RelativeLayout android:id="@+id/rel_alignment" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="20sp" android:textColor="#ffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:text="Blur" android:layout_centerVertical="true"/>
+                <TextView android:textSize="20sp" android:textColor="#ffffff" android:id="@+id/btn_alignment_done" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="8dp" android:text="Done" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+            </RelativeLayout>
+            <View android:id="@+id/adAlignment" android:layout_width="match_parent" android:layout_height="2dp" android:layout_below="@+id/rel_alignment"/>
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/adAlignment" android:layout_centerVertical="true">
+                <RadioGroup android:gravity="left" android:orientation="vertical" android:id="@+id/rg" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <RadioButton android:gravity="center" android:id="@+id/rb_none" android:layout_width="wrap_content" android:layout_height="35dp" android:text="No blur" android:layout_weight="1"/>
+                    <RadioButton android:gravity="center" android:id="@+id/rb_inner" android:layout_width="wrap_content" android:layout_height="35dp" android:text="Inner blur" android:layout_weight="1"/>
+                    <RadioButton android:gravity="center" android:id="@+id/rb_normal" android:layout_width="wrap_content" android:layout_height="35dp" android:text="Normal blur" android:layout_weight="1"/>
+                    <RadioButton android:gravity="center" android:id="@+id/rb_outer" android:layout_width="wrap_content" android:layout_height="35dp" android:text="Outer blur" android:layout_weight="1"/>
+                    <RadioButton android:gravity="center" android:id="@+id/rb_solid" android:layout_width="wrap_content" android:layout_height="35dp" android:text="Solid blur" android:layout_weight="1"/>
+                </RadioGroup>
+            </LinearLayout>
+        </RelativeLayout>
+        <RelativeLayout android:id="@+id/relPattern" android:background="@mipmap/text_seekbar_bg" android:padding="10dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_above="@+id/rel_buttons">
+            <RelativeLayout android:id="@+id/rel_pattern" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="20sp" android:textColor="#ffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:text="Pattern" android:layout_centerVertical="true"/>
+                <TextView android:textSize="20sp" android:textColor="#ffffff" android:id="@+id/btn_pattern_done" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="8dp" android:text="Done" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+            </RelativeLayout>
+            <View android:id="@+id/adPattern" android:layout_width="match_parent" android:layout_height="10dp" android:layout_below="@+id/rel_pattern"/>
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="2dp" android:layout_below="@+id/adPattern" android:layout_centerVertical="true">
+                <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <GridView android:gravity="center" android:layout_gravity="center" android:id="@+id/grid_pattern" android:background="#e0e0e0" android:layout_width="match_parent" android:layout_height="125dp" android:listSelector="@drawable/list_select" android:horizontalSpacing="0dp" android:stretchMode="columnWidth" android:numColumns="3"/>
+                </LinearLayout>
+            </RelativeLayout>
+        </RelativeLayout>
+        <RelativeLayout android:id="@+id/relFontStyle" android:background="@mipmap/text_seekbar_bg" android:padding="10dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_above="@+id/rel_buttons">
+            <RelativeLayout android:id="@+id/rel_FontStyle" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="20sp" android:textColor="#ffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:text="Font Style" android:layout_centerVertical="true"/>
+                <TextView android:textSize="20sp" android:textColor="#ffffff" android:id="@+id/btn_fontstyle_done" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="8dp" android:text="Done" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+            </RelativeLayout>
+            <View android:id="@+id/adFontStyle" android:layout_width="match_parent" android:layout_height="10dp" android:layout_below="@+id/rel_FontStyle"/>
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="2dp" android:layout_below="@+id/adFontStyle" android:layout_centerVertical="true">
+                <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <GridView android:gravity="center" android:layout_gravity="center" android:id="@+id/grid_fontstyle" android:background="#e0e0e0" android:layout_width="match_parent" android:layout_height="125dp" android:listSelector="@drawable/list_select" android:stretchMode="columnWidth" android:numColumns="3"/>
+                </LinearLayout>
+            </RelativeLayout>
+        </RelativeLayout>
+        <RelativeLayout android:id="@+id/rel_buttons" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+            <LinearLayout android:gravity="center" android:id="@+id/lin_first" android:background="#ffffff" android:padding="4dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/lin_text" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1">
+                    <ImageView android:id="@+id/text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/btn_add_text" android:tint="#ab12aa"/>
+                    <TextView android:textSize="10sp" android:textColor="#848383" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="ADD TEXT"/>
+                </LinearLayout>
+                <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/lin_textSize" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1">
+                    <ImageView android:id="@+id/textSize" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/btn_text_size" android:tint="#e9043a"/>
+                    <TextView android:textSize="10sp" android:textColor="#848383" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="SIZE"/>
+                </LinearLayout>
+                <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/lin_color" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1">
+                    <ImageView android:id="@+id/color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/btn_color" android:tint="#e93604"/>
+                    <TextView android:textSize="10sp" android:textColor="#848383" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="COLOR"/>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:gravity="fill" android:id="@+id/lin_second" android:background="#ffffff" android:padding="4dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/lin_first">
+                <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/lin_style" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1">
+                    <ImageView android:id="@+id/style" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/btn_style" android:tint="#04e99d"/>
+                    <TextView android:textSize="10sp" android:textColor="#848383" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Style" android:textAllCaps="true"/>
+                </LinearLayout>
+                <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/lin_pattern" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1">
+                    <ImageView android:id="@+id/pattern" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/btn_pattern" android:tint="#41e904"/>
+                    <TextView android:textSize="10sp" android:textColor="#848383" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Pattern" android:textAllCaps="true"/>
+                </LinearLayout>
+                <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/lin_alignment" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1">
+                    <ImageView android:id="@+id/imgAlignment" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@mipmap/btn_alignment" android:tint="#061291"/>
+                    <TextView android:textSize="10sp" android:textColor="#848383" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Blur" android:textAllCaps="true"/>
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+        <RelativeLayout android:id="@+id/relAddText" android:padding="5dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/layout_navbar" android:layout_centerHorizontal="true">
+            <LinearLayout android:id="@+id/rel2" android:background="@mipmap/dialog_bg" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_centerHorizontal="true">
+                <LinearLayout android:gravity="top" android:orientation="vertical" android:padding="8dp" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="8dp" android:layout_marginRight="8dp" android:weightSum="1">
+                    <LinearLayout android:gravity="top" android:layout_gravity="top" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="0.2">
+                        <TextView android:textSize="32sp" android:textColor="#3498db" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Add Text"/>
+                    </LinearLayout>
+                    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="0.6">
+                        <EditText android:textColor="#adaeb1" android:layout_gravity="start" android:id="@+id/edt_text" android:background="#f4f4f4" android:paddingLeft="10dp" android:scrollbars="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:hint="Add your text here..." android:maxLines="3" android:layout_centerInParent="true"/>
+                    </LinearLayout>
+                    <LinearLayout android:gravity="end" android:layout_gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="0.1">
+                        <ImageView android:id="@+id/btn_addtext_done" android:layout_width="30dp" android:layout_height="30dp" android:layout_marginTop="8dp" android:layout_marginRight="8dp" android:src="@mipmap/btn_text_done" android:layout_alignParentRight="true"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+</LinearLayout>

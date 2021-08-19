@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:background="@color/black_trans" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:orientation="horizontal" android:id="@+id/toolbar" android:background="@color/colorPrimary" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@+id/back_dialog" android:background="@drawable/ic_donex" android:padding="5dp" android:layout_width="35dp" android:layout_height="35dp" android:layout_marginLeft="@dimen/value_8" android:src="@drawable/ic_back" android:tint="@color/white" android:layout_centerVertical="true"/>
+        <TextView android:textSize="20dp" android:textColor="@color/white" android:gravity="center" android:layout_gravity="center" android:id="@+id/textView" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Select Sticker" android:layout_weight="1" android:layout_alignLeft="@+id/back_dialog" android:layout_centerVertical="true" android:layout_alignStart="@+id/back_dialog"/>
+    </RelativeLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@+id/stickerlist" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1">
+        <GridView android:id="@+id/gridStickerList" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_margin="@dimen/value_10" android:listSelector="@android:color/transparent" android:numColumns="3" android:layout_centerInParent="true"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@+id/category" android:background="@color/colorPrimary" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@+id/c1" android:padding="4dp" android:layout_width="match_parent" android:layout_height="60dp" android:src="@drawable/a3" android:layout_weight="1"/>
+        <ImageView android:id="@+id/c2" android:padding="4dp" android:layout_width="match_parent" android:layout_height="60dp" android:src="@drawable/monster_05" android:layout_weight="1"/>
+        <ImageView android:id="@+id/c3" android:padding="4dp" android:layout_width="match_parent" android:layout_height="60dp" android:src="@drawable/l8" android:layout_weight="1"/>
+        <ImageView android:id="@+id/c4" android:padding="4dp" android:layout_width="match_parent" android:layout_height="60dp" android:src="@drawable/wedding06" android:layout_weight="1"/>
+        <ImageView android:id="@+id/c5" android:padding="4dp" android:layout_width="match_parent" android:layout_height="60dp" android:src="@drawable/s14" android:layout_weight="1"/>
+        <ImageView android:id="@+id/c6" android:padding="4dp" android:layout_width="match_parent" android:layout_height="60dp" android:src="@drawable/b3" android:layout_weight="1"/>
+    </LinearLayout>
+</LinearLayout>
